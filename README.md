@@ -1,17 +1,96 @@
-# React + TypeScript + Vite
+# AI-Powered Note-Taking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern note-taking application built with React, TypeScript, and Vite that enables you to create, manage, and enhance your notes using AI assistance and external content integration.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **AI-Powered Writing**: Leverage AI to help you write, edit, and enhance your notes
+- **External Content Integration**: 
+  - Reference and link to other notes in your collection
+  - Pull in content from the web
+  - Integrate external resources seamlessly
+- **Modern UI**: Built with shadcn/ui components and Tailwind CSS for a beautiful, responsive interface
+- **Fast Development**: Powered by Vite for lightning-fast HMR and builds
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - UI component library
+- **Radix UI** - Accessible component primitives
 
-## Expanding the ESLint configuration
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/        # React components
+│   └── ui/           # shadcn/ui components
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+├── App.tsx           # Main application component
+└── main.tsx          # Application entry point
+```
+
+## Development
+
+This project uses:
+- **Vite** with React plugin for Fast Refresh
+- **ESLint** for code linting
+- **TypeScript** for type checking
+
+### React Compiler
+
+The React Compiler is not enabled by default due to its impact on dev & build performance. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint Configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
